@@ -1,8 +1,4 @@
-require 'pry'
-#create and edit a file
-# stage the file -git add
-# make a commit
-# push to git
+
 def calc_menu
 	puts "Welcome to Ruby Calculator"
 	puts "Enter your first number:"
@@ -36,6 +32,3 @@ def calc_menu
 end
  
 calc_menu
-# figure out how to do the math on numbers
-# outpput the result to the user
-# do all the bonus problems
