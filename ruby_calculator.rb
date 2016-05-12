@@ -1,16 +1,41 @@
+require 'pry'
 #create and edit a file
 # stage the file -git add
 # make a commit
 # push to git
-puts "Welcome to ruby calculator"
-puts "Enter your first number:"
-# get the first number
-puts "Enter your operator"
-# get your operator
-puts "Enter the second number:"
-# get the second number
+def calc_menu
+	puts "Welcome to Ruby Calculator"
+	puts "Enter your first number:"
+	# get the first number
+  first_number = gets.strip.to_f
 
+	puts "Enter your operator"
+	# get your operator
+	operator = gets.strip.to_s
+ 
+	puts "Enter the second number:"
+	# get the second number
+	last_number = gets.strip.to_f
+
+
+	puts "Your answer is"
+		
+	case operator
+	  when "-"
+	   	answer = first_number - last_number
+	   	puts answer
+	  when "+"
+	  	puts first_number + last_number
+	  when "*"
+	  	puts first_number * last_number
+	  when "/"
+	  	puts first_number / last_number
+  end	
+  	
+	
+end
+ 
+calc_menu
 # figure out how to do the math on numbers
 # outpput the result to the user
-
-# Do all the bonus problems
+# do all the bonus problems
